@@ -2,7 +2,7 @@ package Observer
 
 class ConcreteSubject: Subject{
 
-    var list = ArrayList<Observer>()
+    var list = mutableListOf<Observer>()
 
     private var indecs = arrayOf(1, 2, 3)
 

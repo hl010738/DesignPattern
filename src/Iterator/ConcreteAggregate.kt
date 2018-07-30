@@ -11,10 +11,13 @@ class ConcreteAggregate: Aggregate(){
         return ConcreteIterator(this)
     }
 
-    override fun getAggregate(index: Int) = list[index]
 
-    override fun setAggregate(index: Int, any: Any){
-        list.add(index, any)
+    operator fun set(index: Int, any: Any){
+        this.list.add(index, any)
     }
 
+    operator fun get(index: Int): Any{
+        return this.list[index]
+    }
 }
+

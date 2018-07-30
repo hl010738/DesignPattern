@@ -7,10 +7,10 @@ package Iterator
 fun main(args: Array<String>) {
     var aggregate = ConcreteAggregate()
 
-    aggregate.setAggregate(0, "a")
-    aggregate.setAggregate(1, "b")
-    aggregate.setAggregate(2, "c")
-    aggregate.setAggregate(3, "d")
+    aggregate[0] = "a"
+    aggregate[1] = "b"
+    aggregate[2] = "c"
+    aggregate[3] = "d"
 
     var iterator = aggregate.createIterator()
 

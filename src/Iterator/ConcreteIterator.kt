@@ -7,11 +7,11 @@ class ConcreteIterator(aggregate: ConcreteAggregate): Iterator(){
     private var position: Int = 0
 
     override fun first(): Any? {
-        return aggregate.getAggregate(0)
+        return aggregate[0]
     }
 
     override fun next(): Any? {
-        return aggregate.getAggregate(position++)
+        return aggregate[position++]
     }
 
     override fun hasNext(): Boolean {
@@ -19,6 +19,6 @@ class ConcreteIterator(aggregate: ConcreteAggregate): Iterator(){
     }
 
     override fun currentItem(): Any? {
-        return aggregate.getAggregate(position)
+        return aggregate[position]
     }
 }

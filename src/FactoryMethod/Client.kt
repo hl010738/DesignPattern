@@ -1,7 +1,7 @@
 package FactoryMethod
 
 /*
-    工厂方法模式 Factory Pattern
+    工厂方法模式 Factory Method
  */
 
 fun main(args: Array<String>) {

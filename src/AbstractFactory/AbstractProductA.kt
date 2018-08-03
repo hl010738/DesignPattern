@@ -1,0 +1,3 @@
+package AbstractFactory
+
+abstract class AbstractProductA
